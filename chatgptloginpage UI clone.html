@@ -20,7 +20,7 @@ body {
 /* LEFT SIDE */
 .left {
   width: 60%;
-  background: linear-gradient(160deg, #1f3c88, #1b2a49);
+  background: #00002e;
   color: white;
   padding: 60px;
   display: flex;
@@ -30,16 +30,22 @@ body {
 
 .logo-text {
   position: absolute;
-  top: 25px;
-  left: 40px;
-  font-size: 20px;
+  top: 10px;
+  left: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: #b880e5;
+  height: 62px;
+  width: 357px;
+  
+  display: block;
+  margin: 0px;
+  padding: 0px;
 }
 
 .left h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 5px;
   color: #b880e5;
 }
 
@@ -51,12 +57,12 @@ body {
 /* RIGHT SIDE */
 .right {
   width: 40%;
-  background: #0f0f0f;
+  background: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  
 }
 
 /* CENTER CONTENT */
@@ -66,27 +72,38 @@ body {
 }
 
 .center-box h2 {
-  font-size: 28px;
+  font-size: 20px;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  padding-right: 70px;
+ 
   
 }
 
 /* BUTTONS */
 .buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
+  border-width: 1px;
+  font: inherit;
+  min-width: 60px;
+  
+  
 }
 
 .btn {
-  padding: 12px 28px;
+  padding: 6px 65px;
   border-radius: 30px;
   border: none;
-  font-size: 12px;
+  font-size: 10px;
   color: white;
   cursor: pointer;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background: #0066de;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-width: 80px;
+
 }
 
 .btn:hover {
@@ -95,8 +112,10 @@ body {
 
 .try {
   margin-top: 15px;
-  font-size: 13px;
+  font-size: 9px;
   color: white;
+  padding-right: 70px;
+  
 }
 
 /* BOTTOM SECTION */
@@ -108,20 +127,32 @@ body {
 
 .bottom img {
   width: 55px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   opacity: 0.9;
+  width: 36px;
+  height: 24px;
+
 }
 
 .footer {
-  font-size: 12px;
-  color: #888;
+  font-size: 8px;
+  color: #afafaf;
+ 
 }
 
 .footer a {
-  color: #888;
+  color: #afafaf;
   text-decoration: none;
   margin: 0 5px;
+   text-decoration: underline;
 }
+
+.formbox{
+width: 250px;
+
+}
+
+
 </style>
 
 </head>
@@ -140,14 +171,14 @@ body {
 <div class="right">
 
   <div class="center-box">
-    <h2>Get started</h2>
+    <h2 style="padding-right: 0px;" >Get started</h2>
 
     <div class="buttons">
-      <button class="btn">Log in</button>
-      <button class="btn">Sign up for free</button>
+      <button style="width: 140px;" class="btn">Log in</button>
+      <button style="width: 140px; padding: 0px;" class="btn">Sign up for free</button>
     </div>
 
-    <div class="try">Try it first</div>
+    <div class="try" style="padding-right: 0px;"><a> Try it first</a></div>
   </div>
 
   <!-- LOGO + TERMS -->
